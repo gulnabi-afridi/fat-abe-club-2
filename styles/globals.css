@@ -1,0 +1,145 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: "Bicyclette-Light";
+  src: url("/Fonts/Bicyclette-Light.ttf");
+  font-display: swap;
+}
+@font-face {
+  font-family: "Bicyclette-Regular";
+  src: url("/Fonts/Bicyclette-Regular.ttf");
+  font-display: swap;
+}
+@font-face {
+  font-family: "Bicyclette-Thin";
+  src: url("/Fonts/Bicyclette-Thin.ttf");
+  font-display: swap;
+}
+@font-face {
+  font-family: "AzoSans-Black";
+  src: url("/Fonts/AzoSans-Black.ttf");
+  font-display: swap;
+}
+*{
+  box-sizing: border-box;
+}
+body {
+  background-color: #150d29;
+}
+
+.headerLinearGredient {
+  background: linear-gradient(
+    125deg,
+    rgba(0, 0, 0, 0.6096813725490196) 0%,
+    rgba(0, 0, 0, 0.5508578431372548) 100%
+  );
+}
+.headerBg {
+  background: linear-gradient(
+    180deg,
+    rgba(0, 0, 0, 0.19791666666666663) 0%,
+    rgba(0, 0, 0, 0.17550770308123254) 98%
+  );
+}
+
+.homeBgImage {
+  background-image: url("../public/bgImage.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: calc(100%, 100%);
+  background-origin: content-box;
+  position: relative;
+  z-index: 1 !important;
+}
+.welcomeNftShadow {
+  background: linear-gradient(
+    180deg,
+    rgba(21, 13, 41, 0.021446078431372584) 50%,
+    rgba(21, 13, 41, 0.8701855742296919) 98%
+  );
+}
+
+/*  */
+.headerBoxShadow {
+  box-shadow: rgb(0 0 0 / 20%) 0px 2px 4px -1px,
+    rgb(0 0 0 / 14%) 0px 4px 5px 0px, rgb(0 0 0 / 12%) 0px 1px 10px 0px;
+}
+/* drawer style */
+.EZDrawer__container {
+  width: 30% !important;
+  background: black !important;
+}
+@media screen and (max-width: 1000px) {
+  .EZDrawer__container {
+    width: 70% !important;
+  }
+}
+@media screen and (max-width: 500px) {
+  .EZDrawer__container {
+    width: 100% !important;
+  }
+}
+
+.css-67l5gl {
+  background-color: #58805a !important;
+}
+.css-1nqcc1s {
+  background-color: #58805a !important;
+}
+.MuiTimeline-root .MuiTimelineItem-root::before {
+  content: none !important;
+}
+
+.MuiTimelineDot-root {
+  background-color: #58805a;
+  width: 30px !important;
+  height: 30px !important;
+}
+
+.MuiTimelineDot-filled {
+  background-color: #58805a;
+  width: 30px !important;
+  height: 30px !important;
+}
+
+.MuiTimelineDot-filledGrey {
+  background-color: #58805a;
+  width: 30px !important;
+  height: 30px !important;
+}
+
+.MuiTimelineConnector-root {
+  background-color: #58805a !important;
+  width: 4px !important;
+  min-height: 50px !important;
+}
+/* form styling */
+.MuiInputBase-input {
+  max-width: 210px !important;
+  color: white !important;
+  font-family: "BicycletteThin" !important;
+  font-size: 18px !important;
+}
+.MuiOutlinedInput-notchedOutline {
+  border: 2px solid white !important;
+}
+.MuiFormLabel-root {
+  color: white !important;
+  font-family: "BicycletteThin";
+
+  z-index: 100;
+}
+/* =======look up style */
+.valShadow {
+  background: linear-gradient(
+    180deg,
+    rgba(158, 74, 74, 0.6180847338935574) 0%,
+    rgba(152, 79, 79, 0.6292892156862745) 98%
+  );
+}
+
+.fitContent{
+  width: fit-content;
+}
