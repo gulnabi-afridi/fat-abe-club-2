@@ -18,6 +18,7 @@ function NftCollection() {
     };
   }, []);
 
+  
   return (
     <div className="w-full min-h-full overflow-hidden relative z-20">
       <div className="w-full h-full flex flex-col gap-12 pt-[160px] pb-[80px] -mt-[90px] -rotate-6">
@@ -32,6 +33,7 @@ function NftCollection() {
               <div key={index} className="w-[300px] h-[320px] relative">
                 <Image
                   src={nft.name}
+                  alt="seo text here"
                   fill
                   className="rounded-[60px] border-[3px] border-solid border-white"
                 ></Image>
@@ -61,6 +63,7 @@ function NftCollection() {
     </div>
   );
 }
+
 
 const FirstNfyBar = [
   {
@@ -103,6 +106,7 @@ const FirstNfyBar = [
     name: "/Assets/Nfts/nft13.jpg",
   },
 ];
+
 const SecNfyBar = [
   {
     name: "/Assets/Nfts/nft14.jpg",
@@ -144,4 +148,5 @@ const SecNfyBar = [
     name: "/Assets/Nfts/nft13.jpg",
   },
 ];
+
 export default NftCollection;

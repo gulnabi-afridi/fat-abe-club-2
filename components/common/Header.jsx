@@ -109,7 +109,7 @@ function Header() {
             {/* ===========> social icons */}
             <div className="w-full flex gap-4 justify-center items-center mt-8 ">
               {socialLinks.map((nav, index) => {
-                return <Link href="/" className="hover:scale-x-110 transition-all duration-10000">{nav.name}</Link>;
+                return <Link key={index} href="/" className="hover:scale-x-110 transition-all duration-10000">{nav.name}</Link>;
               })}
             </div>
           </div>
